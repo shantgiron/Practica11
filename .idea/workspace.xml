@@ -813,7 +813,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.build">
+  <component name="RunManager" selected="Spring Boot.Practica11Application">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
