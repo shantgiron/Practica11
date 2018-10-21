@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dbc688c-f3ea-4c7e-bceb-1f3cf6fef11b" name="Default" comment="modulo de hazelcast added">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web2018/config/SeguridadWebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web2018/controladora/PruebaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web2018/filters/LogRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/indexBalanceadores.html" afterDir="false" />
+    <list default="true" id="7dbc688c-f3ea-4c7e-bceb-1f3cf6fef11b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/web2018/controladora/HazelcastController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/Practica10Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/config/ConfiguracionSeguridad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/config/UsuarioPredeterminado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/ClientsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/CranesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/ErrorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/LogoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/RentalsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/controladora/UsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Alquiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Equipo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Foto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Rol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/modelo/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioAlquiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioEquipo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioFoto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioRol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/web2018/servicio/ServicioUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -62,11 +81,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/web2018/controladora/LoginController.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="323">
+              <caret line="44" column="103" selection-start-line="44" selection-start-column="103" selection-end-line="44" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HazelcastController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/web2018/controladora/HazelcastController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -86,8 +114,8 @@
       <file leaf-file-name="HazelcastHttpSessionConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="374">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,25 +186,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfiguracionSeguridad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/web2018/config/ConfiguracionSeguridad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -424,9 +440,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6157987755152" />
+        <entry key="$PROJECT_DIR$" value="6158032459247" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2971695991" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3783080769" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2083459160" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1327957258" />
       </map>
@@ -660,7 +676,6 @@
         <option value="$PROJECT_DIR$/src/main/java/web2018/modelo/Equipo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/cranes.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/web2018/controladora/CranesController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/web2018/config/ConfiguracionSeguridad.java" />
         <option value="$PROJECT_DIR$/src/main/java/web2018/config/SeguridadWebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/web2018/filters/LogRequestFilter.java" />
@@ -669,6 +684,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/web2018/controladora/HazelcastController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -686,7 +703,9 @@
     <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -741,7 +760,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web2018" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
+              <item name="controladora" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practica11gutiii" type="b2602c69:ProjectViewProjectNode" />
@@ -749,23 +768,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practica11gutiii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practica10-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practica11gutiii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practica10-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -811,9 +813,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Groovy.build">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="practica11gutiii" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -857,6 +867,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Practica11Application" />
+      <item itemvalue="Groovy.build" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Groovy.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -869,12 +888,20 @@
       <option name="presentableId" value="Default" />
       <updated>1539297997173</updated>
       <workItem from="1539298001231" duration="22791000" />
-      <workItem from="1539836427407" duration="21182000" />
+      <workItem from="1539836427407" duration="22042000" />
     </task>
+    <task id="LOCAL-00001" summary="modulo de hazelcast added">
+      <created>1540093676943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540093676943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43973000" />
+    <option name="totallyTimeSpent" value="44833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -898,11 +925,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28111887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27972028" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32867134" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2667095" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32867134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2667095" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32969153" />
@@ -1248,13 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/web2018/config/ConfiguracionSeguridad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1328,8 +1348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/web2018/config/HazelcastHttpSessionConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1338,8 +1358,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="44" column="103" selection-start-line="44" selection-start-column="103" selection-end-line="44" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/web2018/controladora/HazelcastController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>

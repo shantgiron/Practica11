@@ -1,43 +1,23 @@
 package web2018.config;
 
-import com.hazelcast.config.Config;
-import com.hazelcast.config.MapAttributeConfig;
-import com.hazelcast.config.MapIndexConfig;
-import com.hazelcast.core.Hazelcast;
-import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.config.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.session.hazelcast.HazelcastSessionRepository;
-import org.springframework.session.hazelcast.PrincipalNameExtractor;
-import org.springframework.session.hazelcast.config.annotation.web.http.EnableHazelcastHttpSession;
-
 /**
- * Representa el beans para configurar el manejo de las sesiones vía
- * Hazelcast.
+ * Created by JavaDeveloperZone on 08-01-2018.
  */
-@EnableHazelcastHttpSession
 @Configuration
 public class HazelcastHttpSessionConfig {
-
-    /**
-     * Configurando el servidor Hazelcast.
-     * @return
-     */
     @Bean
-    public HazelcastInstance hazelcastInstance() {
-        //Configuración basica.
-        MapAttributeConfig attributeConfig = new MapAttributeConfig()
-                .setName(HazelcastSessionRepository.PRINCIPAL_NAME_ATTRIBUTE)
-                .setExtractor(PrincipalNameExtractor.class.getName());
-
+    public Config hazelCastConfig(){
         Config config = new Config();
-
-        config.getMapConfig(HazelcastSessionRepository.DEFAULT_SESSION_MAP_NAME)
-                .addMapAttributeConfig(attributeConfig)
-                .addMapIndexConfig(new MapIndexConfig(
-                        HazelcastSessionRepository.PRINCIPAL_NAME_ATTRIBUTE, false));
-
-        return Hazelcast.newHazelcastInstance(config);
+        config.setInstanceName("hazelcast-instance")        // hazel case instance name
+                .addMapConfig(
+                        new MapConfig()                     // create map
+                                .setName("configuration")
+                                .setMaxSizeConfig(new MaxSizeConfig(200, MaxSizeConfig.MaxSizePolicy.FREE_HEAP_SIZE))
+                                .setEvictionPolicy(EvictionPolicy.LRU)
+                                .setTimeToLiveSeconds(-1));     // cache will be available until it will remove manually. less then 0 means never expired.
+        return config;
     }
-
 }
