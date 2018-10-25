@@ -1,3 +1,4 @@
+/*
 package web2018.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,13 +34,8 @@ public class SeguridadWebConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    /**
-     * Indicando que la forma de autentificar será mediante el header de:
-     * Authorization:Basic <Clave>
-     * Se consigue concatenando el usuario y password a base64.
-     * @param http
-     * @throws Exception
-     */
+    */
+/*
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -49,4 +45,4 @@ public class SeguridadWebConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .httpBasic(); //indicando que será autentificacion basica, enviado por el header.
     }
-}
+}*/

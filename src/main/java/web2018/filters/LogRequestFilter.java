@@ -1,3 +1,4 @@
+/*
 package web2018.filters;
 
 import org.slf4j.Logger;
@@ -42,4 +43,4 @@ public class LogRequestFilter implements Filter {
     public void destroy() {
 
     }
-}
+}*/

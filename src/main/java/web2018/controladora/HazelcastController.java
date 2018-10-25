@@ -1,3 +1,4 @@
+/*
 package web2018.controladora;
 
 import com.hazelcast.core.HazelcastInstance;
@@ -22,3 +23,4 @@ public class HazelcastController {
         return "Hazelcast values is :" +stringStringMap.get("data");                    // read value
     }
 }
+*/

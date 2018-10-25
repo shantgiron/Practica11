@@ -1,3 +1,4 @@
+/*
 package web2018.controladora;
 
 import org.springframework.stereotype.Controller;
@@ -15,13 +16,15 @@ import javax.servlet.http.HttpSession;
 public class PruebaController {
 
 
-    /**
+    */
+/**
      * Vista index del proyecto, podemos ver el contador del proyecto.
      * @param model
      * @param sesion
      * @param request
      * @return
-     */
+     *//*
+
     @RequestMapping("/")
     public String index(Model model, HttpSession sesion, HttpServletRequest request){
         System.out.println("Entrando al controlador....");
@@ -40,14 +43,16 @@ public class PruebaController {
         return "index";
     }
 
-    /**
+    */
+/**
      * Ruta segura, cuando utilicemos el balanceador de carga la sesion
      * debe compartirse con entre los diferentes proyectos.
      * @param model
      * @param sesion
      * @param request
      * @return
-     */
+     *//*
+
     @RequestMapping("/admin/")
     public String zonaAdmin(Model model, HttpSession sesion, HttpServletRequest request){
         System.out.println("Entrando a la zona admin....");
@@ -56,17 +61,19 @@ public class PruebaController {
         return "/admin/index.html";
     }
 
-    /**
+    */
+/**
      *
      * @param model
      * @param session
      * @param redirectAttributes
      * @return
-     */
+     *//*
+
     @RequestMapping("/logout")
     public String logout(Model model, HttpSession session, RedirectAttributes redirectAttributes){
         //cerrando la sesion.
         session.invalidate();
         return "redirect:/";
     }
-}
+}*/

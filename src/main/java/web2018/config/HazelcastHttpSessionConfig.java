@@ -1,11 +1,14 @@
+/*
 package web2018.config;
 
 import com.hazelcast.config.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+*/
 /**
  * Created by JavaDeveloperZone on 08-01-2018.
- */
+ *//*
+
 @Configuration
 public class HazelcastHttpSessionConfig {
     @Bean
@@ -21,3 +24,4 @@ public class HazelcastHttpSessionConfig {
         return config;
     }
 }
+*/

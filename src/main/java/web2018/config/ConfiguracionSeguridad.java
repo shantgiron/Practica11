@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -19,6 +20,14 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
+        BCryptPasswordEncoder bCryptPasswordEncoder=new BCryptPasswordEncoder();
+
+        auth.inMemoryAuthentication()
+                .passwordEncoder(bCryptPasswordEncoder)
+                .withUser("admin")
+                .password(bCryptPasswordEncoder.encode("admin"))
+                .roles("ADMIN");
+        //Donde dices que sea admin admin la clave? lol nunca iba a
         auth.jdbcAuthentication().dataSource(dataSource)
                 .usersByUsernameQuery("select NOMBRE_USUARIO,CONTRASENA,HABILITADO from USUARIO where NOMBRE_USUARIO=?")
                 .authoritiesByUsernameQuery("select NOMBRE_USUARIO, ROL  from USUARIO where NOMBRE_USUARIO=?");
@@ -29,7 +38,7 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/index", "/usuarios","/alquileres","/equipos","/clientes").authenticated()
                 .anyRequest().permitAll()
-                .antMatchers("/usuarios/").hasAnyRole("ADMINISTRADOR")
+                .antMatchers("/usuarios/").hasAnyRole("ADMIN")
                 .and()
                 .formLogin().loginPage("/login").permitAll().successForwardUrl("/index")
                 .usernameParameter("username").passwordParameter("password")
